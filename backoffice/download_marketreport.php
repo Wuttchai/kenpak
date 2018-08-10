@@ -116,7 +116,7 @@ if($_GET[doc_type]=="1"){
 					OR fs_orders.Orders_Date_Cutoff = '$day_cutoff'
 					GROUP BY fs_sell_product.Product_Code";
 			$result = mysqli_query($conn, $sql);
-        echo $sql ;
+      
 			if(mysqli_num_rows($result) != 's') {
 
 				while($row = mysqli_fetch_assoc($result)) {
